@@ -19,7 +19,7 @@ public interface LockFreeList<T> {
     /**
      * Appends value to the end of list
      */     
-    boolean append(T value);
+    void append(T value);
  
     boolean remove(T value);
  
