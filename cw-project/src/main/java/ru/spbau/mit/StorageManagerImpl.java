@@ -11,7 +11,7 @@ public class StorageManagerImpl implements StorageManager {
 
     @Override
     public <T, R> MemoizedFunction<T, R> createMemoizedFunction(Function<T, R> function) {
-        return null;
+        return new MemoizedFunctionImpl<>(function);
     }
 
     @Override
